@@ -33,16 +33,16 @@ def copy_to_points():
     nama = nama.replace("{", "")
     nama = nama.replace("}", "")
     nama = nama.split(';')
-    print(nama) # this is list of object names
+    print(nama)  # this is list of object names
     start = 0
+    print(f'EDIT MOVE')
+    print(f'KEEP')
+    print(f'MOVEORIGIN')
+    print(f'0, 0, 0,')  # start point
     for i in tipe:
-    	if i == 'Point' :
-    		print(f'add {i} "{nama[start]}"')
-    		print(f'EDIT MOVE')
-    		print(f'KEEP')
-    		print(f'MOVEORIGIN')
-    		print(f'0, 0, 0,')
-    	start +=1
+        if i == 'Point':
+            print(f'add {i} "{nama[start]}"')
+        start += 1
     
     
     
